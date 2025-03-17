@@ -7,6 +7,7 @@ body {
     color: #ffffff;
     font-family: 'Syne', sans-serif;
     overflow-x: hidden;
+    margin: 0;
 }
 
 .header {
@@ -315,6 +316,7 @@ body {
 }
 
 .about-me__title,
+.experience__title,
 .projects__title {
     display: flex;
     align-items: center;
@@ -329,6 +331,7 @@ body {
 }
 
 .about-me__title::before,
+.experience__title::before,
 .projects__title::before {
     position: absolute;
     content: "";
@@ -338,10 +341,39 @@ body {
     background-color: #fecb00;
 }
 
-.about-me__text {
+.about-me__text,
+.experience__text,
+.experience__year {
     color: #181818;
     padding: 20px 80px;
     text-align: justify;
+}
+
+.experience__item {
+    color: #181818;
+    text-align: justify;
+}
+
+.experience__year {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 80px;
+    background: #fecb00;
+    border-radius: 5px;
+}
+
+.experience__text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-left: 80px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.experience__list {
+    padding-left: 80px
 }
 
 .projects-wrapper {
